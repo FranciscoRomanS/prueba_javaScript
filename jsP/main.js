@@ -3,16 +3,13 @@
 // y la devuelva con todos sus caracteres en mayúsculas y separados por espacios. 
 // Ejemplo: Para "Ana" devolverá "A N A".
 
-// const ana = ["a", "n", "a"];     // Declaro el array con los elementos del nombre ana
-// ana.forEach(function (an) {console.log(an.toUpperCase())        // Mediante la funcion forEach recorro cada elemento 
-//                                                                // del array aplico el metodo toUpperCase 
-//                                                                // devolviendo cada elemento convertido en mayusculas 
-//                                                                // a la consola
-//  });
-// ______________________________________________________________
-const ana = ["a n a"];     
-ana.forEach(function (an) {console.log(an.toUpperCase())});
 
+// function separarLetras(palabra) {
+//   const arrayLetras = palabra.split('');    // Convertir el string en un array de letras
+//   const arrayMayusculas = arrayLetras.map(letra => letra.toUpperCase());   // Convertir cada letra a mayúscula
+//   return arrayMayusculas.join(' ');        //Espaciar las letras con espacios 
+// }
+// console.log(separarLetras("Ana"));
 
 // _________________________________________________________________________________________________________________
 
@@ -20,10 +17,21 @@ ana.forEach(function (an) {console.log(an.toUpperCase())});
 // Declara una función que acepte un nombre como parámetro y devuelva el número de palabras que tiene el nombre.
 //  Ejemplo: Para "Antonio Alberto Jesús" devolverá 3.
 
-
-// let nombre = ["Antonio", "Alberto", "Jesús"];
-// console.log(nombre.length);
-
-// ___________________________________________________________________________________________________________________
+// function contarPalabras(nombre) {
+  
+//   var palabras = nombre.split(' ');                        // Convertir el string en un array de palabras
+//   var contador = 0;
+//     for (var i = 0; i < palabras.length; i++) {             //  Contar palabras no vacías con un bucle for
+//     if (palabras[i].length > 0) {
+//       contador++;
+//     }
+//   }
+  
+ 
+//   return contador;                                         // Devolver el contador
+// }
+// console.log(contarPalabras("Antonio Alberto Jesús")); // 3
+    
+//____________________________________________________________________________________________________________________
 // Ejercicio 3:
 // Diseña un algoritmo que cuente las veces que aparece una determinada letra en una frase.
